@@ -1,2 +1,2 @@
 # Hospital-Management-and-Appointment-System
-It is a thing that allows officer to manage patient records in hospitals and a system that allows patients to make an appointment. It is a project created with the C programming language.
+// The system is that allows officer to manage patient records in hospitals and in allows patients to make an appointment. It is a project created with the C programming language.
