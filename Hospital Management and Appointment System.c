@@ -37,7 +37,7 @@ system("cls");
 			
 	    	while(c!=6)
 	    	{	
-			printf("\n   Enter Your Choice   \n");
+		printf("\n   Enter Your Choice   \n");
 	        printf("\n1. Add Information\n2. View Information\n3. Search\n4. Edit Information\n5. Delete Information\n6. Exit\n\nOption : ");
 	        scanf("%d",&c);//choice for option
 	        fflush(stdin);//making it clear
@@ -78,7 +78,7 @@ system("cls");
 	            printf("\n\nInvalid input, try again");
 	        }
 	        printf("\n\n");
-			} 
+		} 
 		}
 		else
 		{
@@ -102,10 +102,10 @@ system("cls");
     	scanf("%d",&y);//choice for option
     	fflush(stdin);//making it clear
         
-    	if(y==1) // make
-    	{
-    	system("cls");
-        make(); 
+    		if(y==1) // make
+    		{
+    		system("cls");
+        	make(); 
 		}
 		else if(y==2) // document
 		{
@@ -231,7 +231,7 @@ void search()
 	            printf("Room number: %d\n",x[g].room);
 	            printf("Phone number: ");
 	            puts(x[g].phone);
-                f=0;
+                    f=0;
             }
         }
     	if(f==1)
@@ -247,7 +247,7 @@ void search()
         {
             if(f==x[g].age)
             {   
-				printf("\n");
+		    printf("\n");
 	            printf("Serial number: %d\n",g);
 	            printf("Name: ");
 	            puts(x[g].name);
@@ -257,7 +257,7 @@ void search()
 	            printf("Room number: %d\n",x[g].room);
 	            printf("Phone number: ");
 	            puts(x[g].phone);
-                f=0;
+                    f=0;
             }
         }
     	if(f==1)
@@ -284,7 +284,7 @@ void search()
 	            printf("Room number: %d\n",x[g].room);
 	            printf("Phone number: ");
 	            puts(x[g].phone);;
-                f=0;
+                    f=0;
             }
         }
         if(f==1)
@@ -310,7 +310,7 @@ void search()
 	            printf("Room number: %d\n",x[g].room);
 	            printf("Phone number: ");
 	            puts(x[g].phone);
-                f=0;
+                    f=0;
             }
         }
         if(f==1)
@@ -318,8 +318,8 @@ void search()
     }
     else if(h==6)
     {
-		int f=1;
-		fflush(stdin);
+	int f=1;
+	fflush(stdin);
         printf("Enter phone number: ");
         gets(u);
         fflush(stdin);
@@ -337,7 +337,7 @@ void search()
 	            printf("Room number: %d\n",x[g].room);
 	            printf("Phone number: ");
 	            puts(x[g].phone);
-                f=0;
+                    f=0;
             }
         }
         if(f==1)
@@ -389,7 +389,7 @@ void edit()
             {
                 fflush(stdin);
                 printf("Enter the new phone number= ");
-                 gets(x[p].phone);
+                gets(x[p].phone);
             }
         }
         else
@@ -428,23 +428,23 @@ void del()
         }
         else if(h==2)
         {
-            strcpy(x[f].name,"-No Data-");
+        strcpy(x[f].name,"-No Data-");
         }
         else if(h==3)
         {
-        	 x[f].age=0;	
+        x[f].age=0;	
         }
         else if(h==4)
         {         
-        	strcpy(x[f].disease,"-No Data-");
+        strcpy(x[f].disease,"-No Data-");
         }
         else if(h==5)
         {
-            x[f].room=0;
+        x[f].room=0;
         }
         else if(h==6)
         {
-              strcpy(x[f].phone,"-No Data-");
+        strcpy(x[f].phone,"-No Data-");
         }
     }
     else
@@ -453,10 +453,10 @@ void del()
 //***************APPOÝNMENT SYSTEM***************
 void make()
 {	
-	printf("\n");
+    printf("\n");
     stock=0;
     ent=1;
-	total = stock + ent;
+    total = stock + ent;
 
 	for(i; i<total; i++)
 	{	
@@ -477,7 +477,7 @@ void document()
         printf("Appointment day: ");
         puts(x[i].day);
         printf("Appointment time: ");
-		puts(x[i].time); 
+	puts(x[i].time); 
         printf("\n------------------");
     }
 }
@@ -488,17 +488,17 @@ void cancel()
 	
 	if(ch == 'Y' || ch== 'y')
    { 
-		int d=0;
+	int d=0;
     	if(d < stock)
-		{
-            stock--;
-            printf("\nAppointment canceled.");
-            printf("\n--------------------");
-		}
-		else 
-		{
-			printf("No Data");
-		}	
+	{
+        stock--;
+        printf("\nAppointment canceled.");
+        printf("\n--------------------");
+	}
+	else 
+	{
+	printf("No Data");
+	}	
 	}
   	else if (ch=='N' || ch=='n')
    {
