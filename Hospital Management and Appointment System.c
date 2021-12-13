@@ -9,7 +9,7 @@ struct yedincel // github.com/yedincel
     char phone [50];
     //---- appointment sys. veriable
     char day[50];
-	char time[50];
+    char time[50];
 } 
 x[100];
 	//---- main monitor veriable
@@ -450,7 +450,7 @@ void del()
     else
     printf("\n\nInvalid serial number\n");
 }
-//***************APPO›NMENT SYSTEM***************
+//***************APPO√ùNMENT SYSTEM***************
 void make()
 {	
 	printf("\n");
