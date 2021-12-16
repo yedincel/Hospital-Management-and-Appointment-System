@@ -450,7 +450,7 @@ void del()
     else
     printf("\n\nInvalid serial number\n");
 }
-//***************APPOÝNMENT SYSTEM***************
+//***************APPOINMENT SYSTEM***************
 void make()
 {	
     printf("\n");
