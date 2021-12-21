@@ -68,8 +68,7 @@ system("cls");
 	            del();
 	        }
 	        else if(c==6)
-	        {
-	            write();
+	        {	       
 	            return 0;
 	        }
 	        else
